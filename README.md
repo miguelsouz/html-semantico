@@ -30,6 +30,7 @@ teste do *itálico*
 > Não faltem!
 > (João Marcos)
 
+
 Método `console.log()` no javascript<br>
 ttt
 
