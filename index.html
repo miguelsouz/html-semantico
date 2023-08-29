@@ -1,80 +1,92 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>HTML Semântico</title>
-        <link rel="stylesheet" href="./style.css">
-    </head>
-    <body style="color:rgb(180, 153, 0)">
-        <style>
-            body {
-                color:rgb(107, 4, 4);
-            }
-        </style>
-        <header id="topo-pagina">
-            <nav>
-                <!--Lista não ordenada-->
-                <ul>
-                 <!-- Item de lista -->
-                    <li>
-                        <a href="./index.html">Home</a>
-                    </li>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudo HTML semântico</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header id="menu">  
+        <h1>Sobre HTML Semântico</h1>
+        <nav>
+            <ul>
+                
+                <li>
+                    <a href="#o que são elementos semânticos">Importância </a>
+                </li>
+                <li> 
+                    <a href="#principais tags">Tags</a> 
+                </li>
+                <li>
+                    <a href="#exemplos de tags"> Exemplos de Tags</a>
+                </li>
+            </ul>
+    
+        </nav>
+    </header>
 
-                    <li>
-                        <a href="#sobre-nós">Sobre nós</a>
-                    </li>
-
-                    <li>
-                        <a href="#Contatos">Contatos</a>
-                    </li>
-                </ul>
-            </nav>
+        <section id="o que são elementos semânticos">
+            <article>
+                <h2>Tags e Elementos Semânticos - Importância</h2>
+                    <p>Um elemento semântico descreve claramente seu significado tanto para o navegador quanto para o desenvolvedor.
+                    Muitos sites contêm código HTML, para indicar navegação, cabeçalho e rodapé.Em HTML existem alguns elementos semânticos que podem ser usados ​​para definir diferentes partes de uma página web</p>
+    
+                    <p>A Semântica HTML é importante para a indexação por mecanismos de busca, pois ajudam os robôs dos mecanismos de busca a entender melhor o conteúdo da página.</p>
+            </article>
+        </section> 
         
-            <h1>Lorem ipsum dolor sit amet consectetur. </h1>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem itaque quos aspernatur velit dignissimos amet laboriosam cumque. Ad iste numquam impedit eos quam, soluta aspernatur quo illo eaque laudantium, a esse fuga quos mollitia temporibus nam blanditiis dolore, iure eligendi ipsam? At omnis cupiditate debitis deserunt iusto quam error hic adipisci? At, mollitia doloremque?</p>
-            
-            <a href="#topo-pagina">Voltar para o topo da página</a>
-        </header> 
-    <article>
+        <section id="principais tags">
 
-        <section id="sobre-nós"> 
+            <h2>Algumas Tags</h2>
+            <p>Estas tags são chamadas também de elementos semânticos, ou seja, que conseguem passar uma informação com um significado específico para o conteúdo interpretado pelo navegador, não depende apenas do texto dentro da tag para se entender o que há naquela parte do site.</p>
 
-
-            <h2>Sobre nós</h2>
-            
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas pariatur sunt repellendus fugiat quidem adipisci magni suscipit accusamus consectetur autem necessitatibus delectus fugit provident deleniti, velit sed molestias nostrum quam est tempore ea. Inventore ex fugit laborum consequatur veniam cupiditate, recusandae asperiores facilis placeat, assumenda magnam, facere a rerum optio! Aliquam quo eum nemo!</p>
-            
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias, dolore. Veniam, cum laborum suscipit animi molestiae ipsa accusamus? Quaerat quas cupiditate totam ipsa aperiam quos quibusdam expedita corrupti. In quaerat doloremque sint at ducimus ut, voluptate facere inventore dolores vel molestiae deserunt repellendus! Placeat, dolor!</p>
-
-            <a href="#topo-pagina">Voltar para o topo da página</a>
-            
-        </section>
-        
-        <section id="Contatos">
-
-            <h2>Contatos</h2>
-
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores accusamus numquam ea quam corporis optio fugiat exercitationem non hic unde earum obcaecati excepturi, nobis, autem quis voluptate officiis! Ipsa cum recusandae neque magnam, delectus, nesciunt officiis aliquid, tempore id possimus similique porro! Modi, id sapiente!</p>
-
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium porro voluptates beatae cumque neque nisi hic suscipit minima tempore, repellendus provident accusamus non veniam itaque earum reprehenderit distinctio praesentium quo qui delectus ad quam. Fugiat quo ab error minus vero sunt repellat laborum cum! Tempore, exercitationem. Porro reprehenderit facere labore id animi, molestiae voluptatem dicta laboriosam praesentium aperiam fugiat quia sint vero velit dignissimos? Quas, quae odio?</p>
-
-            <a href="#topo-pagina">Voltar para o topo da página</a>
+            <figure>
+                <img src="https://designe.com.br/wp-content/uploads/2021/01/18-novas-tags-html-para-aprender-a-usar-designe-scaled.jpg" width="400" height="180"> 
+            </figure>
 
         </section>
 
-            <footer>
-             <!--Proibido-->
-             <!-- <header></header> -->
-                <P>
-                 Link para o 
-                    <a href="https://github.com/miguelsouz">Meu github</a>
-                </p>
+        <section id="exemplos de tags">
 
-                <a href="#topo-pagina">Voltar para o topo da página</a>
+            <h4>Exemplos de poucas tags</h4>
+
+            <details>
+                <summary>&ltBlockquote&gt</summary>
+                <P>A tag especifica uma seção citada de outra fonte.Os navegadores geralmente recuam elementos</P>
+                <p>Exemplo:</p>
+                <p>Aqui está uma citação da Ford</p>
+
+<blockquote cite="https://pt.wikipedia.org/wiki/Ford_Motor_Company">
+    Ford Motor Company é uma fabricante de automóveis multinacional estadunidense sediada em Dearborn, Michigan, um subúrbio de Detroit. Foi fundada por Henry Ford e incorporada em 16 de junho de 1903
+</blockquote>
+            </details>
             
-            </footer>
+            <details>
+                <summary>&ltFigure&gt</summary>
+                <p>A &ltfigure&gt tag especifica conteúdo independente, como ilustrações, diagramas, fotos, listagens de códigos, etc.Embora o conteúdo do &ltfigure7gt elemento esteja relacionado ao fluxo principal, sua posição é independente do fluxo principal e, se removido, não deverá afetar o fluxo do documento.
+
+                        Dica: O elemento  &ltfigcaption&gt é usado para adicionar uma legenda ao &ltfigure&gt elemento </p>
+                <figure>
+                    <img src="https://6064052.fs1.hubspotusercontent-na1.net/hubfs/6064052/Imported_Blog_Media/o-que-e-ti.jpeg" width="90" height="90"> 
+                </figure>
+            </details>
+
+        </section>
         
-        </article>
-    </body>
+        <footer>
+            <p>Autor: Miguel Allan</p>
+            <p><a href="miguel2020allan@gmail.com">miguel2020allan2gmail.com</a></p>
+            <li>
+                <a href="#menu">Voltar para o menu</a>
+            </li>
+
+        </footer>
+
+</body>
 </html>
+
+
+
+
+
