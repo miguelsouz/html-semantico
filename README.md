@@ -1,6 +1,5 @@
 # HTML semântico
-### Dando significado a estruturas
-Teste do **negrito**
+link do deployment: https://miguelsouz.github.io/html-semantico
 
 teste do *itálico*
 
