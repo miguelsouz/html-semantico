@@ -1,7 +1,8 @@
+
 html {
     scroll-behavior: smooth;/* comportamento-do-rolagem: suave */
 }
 
 body {
-    color:black;
+    color:black !important;
 }
