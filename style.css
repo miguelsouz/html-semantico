@@ -1,4 +1,10 @@
-
+:root {
+    --cor-primaria: #fffbfc;
+    --cor-secundaria: #ff0c92;
+    --cor-terciaria: #311827;
+    --cor-quaternaria: #051a79;
+    --cor-fundo: #2a71dd;
+}
 
 html {
     scroll-behavior: smooth;/* comportamento-do-rolagem: suave */
@@ -7,11 +13,11 @@ html {
 body {
     margin: 20px 50px;
     text-align: justify;
-    background-color: #ffffca;
+    background-color:var(--cor-fundo);
 }
 
 .titulo-de-pagina{
-    color:#df3e4a;
+    color:var(--cor-primaria);
     line-height: 2;
     font-weight: bold;
     font-size: 22pt;
@@ -19,21 +25,21 @@ body {
 }
 
 .titulo-de-artigo {
-    color:#e75861;
+    color:var(--cor-primaria);
     line-height: 2;
     font-weight: bold;
     font-size: 18pt;
 }
 
 .titulo-de-secao {
-    color:#e75861;
+    color:var(--cor-primaria);
     line-height: 1.8;
     font-weight: bold;
     font-size: 18pt;
 }
 
 .subtitulo-de-artigo {
-    color:#e75861;
+    color:var(--cor-quaternaria);
     line-height: 1.5;
     font-weight: bold;
     font-size: 14pt;
@@ -42,18 +48,21 @@ body {
 }
 
 p {
-    color: slategray;
+    color: var(--cor-primaria);
     line-height: 1.2;
 }
 
 .paragrafo-de-artigo {
-    background-color:#fadcc6;
+    background-color:#1ce0d0;
     padding: 20px;
 }
 
 article {
-    border: 8px solid #f0aa95;
+    border: 8px solid var(--cor-primaria);
     padding: 30px;
     margin: 30px;
     border-radius: 20px 0 20px 0;
 }
+
+
+
