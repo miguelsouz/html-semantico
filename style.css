@@ -1,9 +1,9 @@
 :root {
-    --cor-primaria: #fffbfc;
-    --cor-secundaria: #6200ff;
+    --cor-primaria: #435334;
+    --cor-secundaria: #9EB384;
     --cor-terciaria: #311827;
     --cor-quaternaria: #051a79;
-    --cor-fundo: #060c16;
+    --cor-fundo: #FAF1E4;
 }
 
 html {
@@ -13,7 +13,7 @@ html {
 body {
     margin: 20px 50px;
     text-align: justify;
-    background-color:var(--cor-terciaria);
+    background-color:var(--cor-fundo);
 }
 
 .titulo-de-pagina{
@@ -22,7 +22,6 @@ body {
     font-weight: bold;
     font-size: 30pt;
     margin-left: 440px;
-
 }
 
 .titulo-de-artigo {
@@ -49,24 +48,30 @@ body {
 }
 
 p {
-    color: var(--cor-primaria);
+    color: var(--cor-secundaria);
     line-height: 1.2;
 }
 
-.paragrafo-de-artigo {
-    background-color: var(--cor-secundaria);
-    padding: 0px;
+.paragrafo-de-artigo ~ .paragrafo-de-artigo {
+    padding: 15px;
 }
 
-p + .paragrafo-de-artigo {
-    padding-top: 0;
+.paragrafo-de-artigo:first-of-type {
+    background-color: var(--cor-terciaria);
+    border-radius: 20px 0 0 0;
 }
 
-.espacamento-de-imagem {
-    padding: 70px;
+.paragrafo-de-artigo:last-of-type{
+    background-color: var(--cor-terciaria);
+    border-radius: 0 0 20px 0;
 }
 
-article {
+.paragrafo-de-artigo:only-of-type {
+    background-color: var(--cor-terciaria);
+    border-radius: 20px 0 20px 0;
+}
+
+.article {
     border: 8px solid var(--cor-primaria);
     padding: 30px;
     margin: 30px 0;
@@ -78,8 +83,10 @@ article {
 }
 
 .menu-principal a {
-    color: var(--cor-fundo);
-
+    color: var(--cor-fundo); 
 }
 
-
+.espacamento-de-imagem {
+    padding: 70px;
+    text-align: center;
+}
