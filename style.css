@@ -110,9 +110,18 @@ article {
 .menu-principal li {
     color: var(--cor-terciaria);
     line-height: 54px;
+    display: flex;
+    transition: all .35s 
 }
 
 .menu-principal a {
     color: var(--cor-fundo);
-    font-family: var(--font-secundaria); 
+    font-family: var(--font-secundaria);
+    font-size: 120%;
+    padding: 0 20px;
+
+}
+
+.menu-principal li:hover {
+    background-color: var(--cor-terciaria);
 }
