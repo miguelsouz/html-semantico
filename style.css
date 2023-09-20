@@ -4,6 +4,8 @@
     --cor-terciaria: #311827;
     --cor-quaternaria: #051a79;
     --cor-fundo: #FAF1E4;
+    --font-primaria: 'Times New Roman', serif;
+    --font-secundaria: Arial, Helvetica, sans-serif;
 }
 
 html {
@@ -14,6 +16,7 @@ body {
     margin: 20px 50px;
     text-align: justify;
     background-color:var(--cor-fundo);
+    font-family: var(--font-primaria);
 }
 
 .titulo-de-pagina{
@@ -21,7 +24,7 @@ body {
     line-height: 2;
     font-weight: bold;
     font-size: 22pt;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: var(--font-secundaria);
 }
 
 .titulo-de-artigo {
@@ -29,7 +32,7 @@ body {
     line-height: 2;
     font-weight: bold;
     font-size: 18pt;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: var(--font-secundaria);
 }
 
 .titulo-de-secao {
@@ -37,24 +40,40 @@ body {
     line-height: 1.8;
     font-weight: bold;
     font-size: 25pt;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: var(--font-secundaria);
 }
 
-.subtitulo-de-artigo {
-    color:var(--cor-quaternaria);
-    line-height: 1.5;
-    font-weight: bold;
-    font-size: 14pt;
-    font-family: Arial, Helvetica, sans-serif;
-    font-style: italic;
-    margin-bottom: 10px;
-}
 
 p {
     color: var(--cor-secundaria);
     line-height: 1.2;
 }
 
+/*Estilos dos artigos*/
+section#artigos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+article {
+    border: 8px solid var(--cor-primaria);
+    padding: 30px;
+    margin: 30px 0;
+    border-radius: 20px 0 20px 0;
+    width: 25%;
+}
+.subtitulo-de-artigo {
+    color:var(--cor-quaternaria);
+    line-height: 1.5;
+    font-weight: bold;
+    font-size: 14pt;
+    font-family: var(--font-secundaria);
+    font-style: italic;
+    margin-bottom: 10px;
+}
+       
 .paragrafo-de-artigo {
     background-color: var(--cor-primaria);
     padding: 20px;
@@ -77,13 +96,8 @@ p {
     border-radius: 20px 0 20px 0;
 }
 
-article {
-    border: 8px solid var(--cor-primaria);
-    padding: 30px;
-    margin: 30px 0;
-    border-radius: 20px 0 20px 0;
-    width: 25%;
-}
+
+/*Estilos do menu principal*/
 
 .menu-principal ul {
     background-color: var(--cor-secundaria);
@@ -99,12 +113,6 @@ article {
 }
 
 .menu-principal a {
-    color: var(--cor-fundo); 
-}
-
-section#artigos {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+    color: var(--cor-fundo);
+    font-family: var(--font-secundaria); 
 }
